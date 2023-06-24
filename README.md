@@ -1,1 +1,8 @@
-# data_augmentation_gans
+1. Project Title: Data Augmentation using Generative AI Methods
+
+2. Project Description: The aim of this project is to showcase the use of generative ai methods for solving the problem of class imbalance in a classification problem. To this end, we have used a modiffied version of the MNIST dataset, whereby we have deleted 99% of all the images corresponding to number '5'. In specific, we implemented and tested several generative ai methods for producing data for the lacking class, ranging from variational autoencoders to Wasserstein and Progressive learning GANs, as well as conditional GAN. Furthermore, we used a typical convolutional classifier in order to get a baseline for the accuracy and loss to compare to before the data augmentation and after. Finaly, we have also performed data aumentation using more traditional methods (ie. crop, rotation etc) in order to compare the effectiveness of the two methods for data augmentation.
+
+3. How to use this project: The files containing the implementation of the generative ai methods are all contained in the folder named 'gans-code'. Each file is named after the method it implements (ex. wgan_mnist stands for 'wasserstein-gan'). The user can choose to run the method of their liking in order to generate artificial samples for the mnist dataset. *** the user must save the generated files on a medium of their own (locally or cloud).
+
+4. How to install and run this project: Each file is stand-alone, meaning it contains the code to load the mnist dataset and perform training of the generative methods as well. The default use case creates an imbalance of the class corresponding to number '5'. The user may choose to create a different class imbalance, by modifying the specific code of the file 'custom_mnist' and subsequently modyfing the generative method's files to call upon the new dataset.  *** All required python libraries are listed in 'requirements.txt'
+
